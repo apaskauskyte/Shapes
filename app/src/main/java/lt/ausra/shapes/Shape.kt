@@ -1,8 +1,10 @@
 package lt.ausra.shapes
 
-open class Shape(val sideOne: Int, val sideTwo: Int) {
+open class Shape(sideOne: Int, sideTwo: Int) {
 
-    var area: Int = 0
+    var area = 0
+    val sideOne = 0
+    val sideTwo = 0
 
     fun calculateArea() {
         area = sideOne * sideTwo
