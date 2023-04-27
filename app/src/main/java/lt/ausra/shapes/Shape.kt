@@ -6,7 +6,7 @@ open class Shape(sideOne: Int, sideTwo: Int) {
     val sideOne = 0
     val sideTwo = 0
 
-    fun calculateArea() {
+    open fun calculateArea() {
         area = sideOne * sideTwo
     }
 
