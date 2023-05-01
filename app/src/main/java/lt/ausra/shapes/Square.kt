@@ -1,5 +1,3 @@
 package lt.ausra.shapes
 
-class Square(side: Int, sideOne: Int, sideTwo: Int) : Shape(sideOne, sideTwo) {
-
-}
+class Square(side: Int) : Shape(side, side) {}

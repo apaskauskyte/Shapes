@@ -1,12 +1,13 @@
 package lt.ausra.shapes
 
+import java.math.RoundingMode
 import kotlin.math.PI
 
-class Circle(sideOne: Int, sideTwo: Int, radius: Int) : Shape(sideOne, sideTwo) {
-
-    var radius = 0
+class Circle(var radius: Int) : Shape(0, 0) {
 
     override fun calculateArea() {
-        area = ((radius * radius) * PI).toInt()
+        area = (
+                radius * radius * PI
+                ).toBigDecimal().setScale(0, RoundingMode.HALF_UP).toInt()
     }
 }

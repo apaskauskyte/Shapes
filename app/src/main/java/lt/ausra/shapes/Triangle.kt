@@ -1,10 +1,8 @@
 package lt.ausra.shapes
 
-class Triangle(sideOne: Int, sideTwo: Int, altitudeFromSideTwo: Int) : Shape(sideOne, sideTwo) {
-
-    var altitudeFromSideTwo = 0
+class Triangle(sideOne: Int, sideTwo: Int) : Shape(sideOne, sideTwo) {
 
     override fun calculateArea() {
-        area = (altitudeFromSideTwo * sideTwo)/2
+        area = (sideOne * sideTwo)/2
     }
 }
